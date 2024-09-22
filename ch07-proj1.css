@@ -63,17 +63,19 @@ d-actions {
 
 /* add your styles here */
 header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: flex; /* used to make  a flexbox with the header element*/
+    justify-content: space-between; /* used to space the content all the way to the left and right */
+    align-items: center; /* aligns the items vertically in the center */
 }
 
 .container {
-    display: flex;
-    flex-wrap: wrap;
+    display: flex; /* used to make  a flexbox with the header element*/
+    flex-wrap: wrap; /* used to make the elements wrap below when overflowing the flexbox */
     align-items: center;
-    justify-content: center;
+    justify-content: center; 
 }
+
+/* sets the card width to be 24% of the screen */
 .card {
     width: 24%;
 }
@@ -84,10 +86,12 @@ header {
     justify-content: space-between;
 }
 
+/* the image will never strech past its 100% size */
 img {
     max-width: 100%;
 }
 
+/* highlights the image when you hover with your mouse */
 .card img:hover {
     filter: saturate(1.5);
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
@@ -98,6 +102,7 @@ img {
     box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
 }
 
+/* hides the button until you hover over it */
 .card button {
     opacity: 0;
 }
@@ -115,7 +120,7 @@ img {
   --header-height: 4em;
   }
   .card {
-    width: 100%;
+    width: 100%; /* displays only one card on a mobile screen at a time */
   }
 }
 /* styles for tablet portrait and mobile landscape screens */
@@ -125,6 +130,6 @@ img {
     --header-height: 5em;
   }
   .card {
-    width: 45%;
+    width: 45%; /* displays two cards in a row on a tablet screen */
   }
 }
